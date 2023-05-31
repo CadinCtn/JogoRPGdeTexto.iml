@@ -6,11 +6,14 @@ import funcoes.DADO;
 import funcoes.beleleu;
 
 public class fase2 {
-    public static int fase2() {
+    public static void fase2() {
         Scanner le = new Scanner(System.in);
 
-        byte d,a;
+        //variaveis
+        String entrada;
+        byte decisao;
 
+        //codigo
         if(Jogo.fuga == 1) {
             Fuga.fuga_fase2();
         }
@@ -20,7 +23,7 @@ public class fase2 {
             System.out.println("Teste de percepção:");
             System.out.println("Role um D20:");
             DADO.dado = (byte) DADO.d20();
-            a = le.nextByte();
+            entrada = le.nextLine();
             System.out.println(DADO.dado);
             if(DADO.dado == 1) {
 
@@ -30,8 +33,8 @@ public class fase2 {
 
                 System.out.println("Conforme caminha, percebe algo estranho, sente algo não está certo, movimentações estranhas por entre as árvores");
                 System.out.println("1) Continuar a caminhar, deve ter sido somente uma impressão.  -  2) Sair da trilha, encontrar outro caminho");
-                a = le.nextByte();
-                switch (a) {
+                decisao = le.nextByte();
+                switch (decisao) {
                     case 1: Emboscada.emboscada_fase2();
                         break;
 
@@ -47,6 +50,5 @@ public class fase2 {
 
             }
         }
-        return 0;
     }
 }

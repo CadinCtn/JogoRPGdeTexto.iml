@@ -9,12 +9,12 @@ public class caverna {
 
     static Scanner le = new Scanner(System.in);
     public static void caverna() {
-        byte z,a;
+        byte decisao;
 
         System.out.println("Você adentrou a caverna!");
         System.out.println("Teste de Sorte:");
         System.out.println("Role o D20:");
-        a = le.nextByte();
+        String entrada = le.nextLine();
         DADO.dado = (byte) DADO.d20();
         System.out.println(DADO.dado);
 
@@ -26,8 +26,8 @@ public class caverna {
             System.out.println("Voce ouve um barulho vindo de sua direita, olha naquela direção e vê um 'Alotimantes'!");
             System.out.println("Uma criatura comum por essas cavernas, o que quer fazer?");
             System.out.println("1) Fugir  -  2) Enfrentá-lo");
-            z = le.nextByte();
-            switch (z) {
+            decisao = le.nextByte();
+            switch (decisao) {
                 case 1:
                     System.out.println("Você corre até o outro lado da caverna e percebe que o Alotimantes veio atraz de você, ele parece furioso!");
                     Jogo.fuga = 1;
@@ -45,8 +45,6 @@ public class caverna {
         } else if (DADO.dado < 20 && DADO.dado >= 16) {
             System.out.println("Você atravessa a caverna sem complicações!");
         }
-
-
     }
 
 }

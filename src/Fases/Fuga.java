@@ -6,17 +6,17 @@ import funcoes.DADO;
 import funcoes.beleleu;
 
 public class Fuga {
-    public static int fuga_fase2() {
+    public static void fuga_fase2() {
         Scanner le = new Scanner(System.in);
 
-        byte a,d;
+        byte a,decisao;
 
         System.out.println("A criatura estranha te ataca!");
         System.out.println("O que quer fazer:");
         System.out.println("1) Revidar  -  2) Tentar escapar  -  3) Não fazer nada");
-        d = le.nextByte();
+        decisao = le.nextByte();
 
-        switch (d) {
+        switch (decisao) {
             case 1:
                 System.out.println("A criatura vê você se posicionando e tomando uma postura mais confiante, então se acovarda e foge para a caverna.");
                 break;
@@ -25,7 +25,7 @@ public class Fuga {
             case 2:
                 DADO.dado = (byte) DADO.d20();
                 System.out.println("Role um D20:");
-                a = le.nextByte();
+                String entrada = le.nextLine();
                 System.out.println(DADO.dado);
                 if (DADO.dado == 1) {
                     System.out.println("Você tropeça, cai, e é devorado!");
@@ -61,6 +61,5 @@ public class Fuga {
                 break;
 
         }
-        return 0;
     }
 }

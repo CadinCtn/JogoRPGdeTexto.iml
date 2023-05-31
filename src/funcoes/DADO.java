@@ -1,5 +1,4 @@
 package funcoes;
-
 import java.util.Random;
 
 public class DADO {

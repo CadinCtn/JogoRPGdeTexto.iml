@@ -5,20 +5,19 @@ import Jogo_aula2.Jogo;
 import funcoes.DADO;
 import funcoes.beleleu;
 
-import Fases.caverna;
 public class fase1 {
     static Scanner le = new Scanner(System.in);
 
     public static void fase1() {
-        byte x = 0, a;
+        byte decisao;
 
 
         System.out.println("Você estava caminhando pela floresta e encontra uma bifurcação, um caminho para direita e um para esquerda, por onde decide ir?");
         System.out.println("1) Esquerda'CAVERNA'  -  2) Direita'continuar a trilha'");
-        x = le.nextByte();
+        decisao = le.nextByte();
         DADO.dado = (byte) DADO.d20();
 
-        switch (x) {
+        switch (decisao) {
 
             case 1:
                 caverna.caverna();
@@ -31,7 +30,8 @@ public class fase1 {
                 System.out.println("Você passa horas caminhando não sabe para onde, ' há quanto tempo estou andando?', você não sabe, nao possui mais noção de tempo");
                 System.out.println("Não sabe quando isso vai acabar, ou se isso algum dia vai acabar.");
                 System.out.println("role o D20:");
-                a = le.nextByte();
+                String entrada = le.nextLine();
+
                 System.out.println(DADO.d20());
 
                 if (DADO.d20() == 20) {

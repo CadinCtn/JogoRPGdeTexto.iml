@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 
     public class Emboscada {
-        public static int emboscada_fase2() {
+        public static void emboscada_fase2() {
             Scanner le = new Scanner(System.in);
 
             byte emboscada;
@@ -43,7 +43,6 @@ import java.util.Scanner;
                     Jogo.re = 1;
                     break;
             }
-            return 0;
         }
     }
 
