@@ -46,6 +46,9 @@ public class fase1 {
                 Jogo.re = 1;
                 break;
 
+            default: System.out.println("Você, é atingido por um raio...");
+                     beleleu.morte();
+                Jogo.re = 1;
         }
 
     }

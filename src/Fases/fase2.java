@@ -29,7 +29,7 @@ public class fase2 {
 
                 Emboscada.emboscada_fase2();
 
-            } else if(DADO.dado >1 && DADO.dado <15) {
+            } else {
 
                 System.out.println("Conforme caminha, percebe algo estranho, sente algo não está certo, movimentações estranhas por entre as árvores");
                 System.out.println("1) Continuar a caminhar, deve ter sido somente uma impressão.  -  2) Sair da trilha, encontrar outro caminho");
@@ -46,6 +46,7 @@ public class fase2 {
                     default: System.out.println("Você tropeça faz muito barulho e toma uma flechada, aconteceu algo que você não queria que acontecesse.");
                         beleleu.morte();
                         Jogo.re = 1;
+                        break;
                 }
 
             }

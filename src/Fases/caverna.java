@@ -41,8 +41,9 @@ public class caverna {
                 default:
                     System.out.println("Você fica indeciso e o Alomantes te ataca sem chances de revidar ou se defender, devido a sua indecisão!");
                     beleleu.morte();
+                    break;
             }
-        } else if (DADO.dado < 20 && DADO.dado >= 16) {
+        } else{
             System.out.println("Você atravessa a caverna sem complicações!");
         }
     }
