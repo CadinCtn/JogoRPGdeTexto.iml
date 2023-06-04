@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="tem 2 final que nao morre.jar">
+    <output-path>$PROJECT_DIR$/..</output-path>
+    <root id="root">
+      <element id="module-output" name="Jogo rpg de texto" />
+    </root>
+  </artifact>
+</component>

@@ -23,7 +23,7 @@ public class fase3 {
             porta = le.nextByte();
             switch (porta) {
                 case 1:
-                    System.out.println("Você abre a grande porta da frente, e vê quase que um mini extercito com guardas armadurados, criaturas, e monstros.");
+                    System.out.println("Você abre a grande porta da frente, e vê quase que um mini exercito com guardas armadurados, criaturas, e monstros.");
                     System.out.println("Todos eles te atacam sem pensar como se você fosse uma grande ameaça, ja esperavam a chegada de alguem...");
                     beleleu.morte();
 
